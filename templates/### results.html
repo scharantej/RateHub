@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rate Comparison Results</title>
+</head>
+<body>
+<h1>Rate Comparison Results</h1>
+<h2>Same Level Rates</h2>
+<ul>
+{% for rate in same_level_rates %}
+<li>{{ rate.hourly_rate }} - {{ rate.supplier }}</li>
+{% endfor %}
+</ul>
+<h2>Same Location Rates</h2>
+<ul>
+{% for rate in same_location_rates %}
+<li>{{ rate.hourly_rate }} - {{ rate.supplier }}</li>
+{% endfor %}
+</ul>
+<h2>Mixed Rates</h2>
+<ul>
+{% for rate in mixed_rates %}
+<li>{{ rate.hourly_rate }} - {{ rate.supplier }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
